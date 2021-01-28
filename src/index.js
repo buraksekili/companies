@@ -9,7 +9,7 @@ const theme = {
       brand: "#228BE6",
     },
     font: {
-      family: "Roboto",
+      family: "Roboto Mono",
       size: "18px",
       height: "20px",
     },
