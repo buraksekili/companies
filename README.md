@@ -2,7 +2,7 @@
 
 https://organizationtechs.netlify.app/
 
-A simple app that allows you to search for companies on GitHub based on the language that they use.
+A simple app that allows you to search for organizations on GitHub based on the language that they use.
 
 Example usage: 
 ```
