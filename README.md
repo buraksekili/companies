@@ -22,3 +22,7 @@ cd companies/
 npm install
 ```
 
+## License
+
+[MIT](https://github.com/buraksekili/companies/blob/master/LICENSE)
+
