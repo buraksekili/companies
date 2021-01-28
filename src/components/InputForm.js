@@ -13,11 +13,10 @@ const InputForm = ({ fetchCompanies }) => {
       }
     >
       <FormField
-        margin={0}
+        required
         name="language"
         htmlFor="text-input-language"
         label="Language"
-        required
       >
         <TextInput
           plain={false}

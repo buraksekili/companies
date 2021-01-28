@@ -12,7 +12,7 @@ import { Github } from "grommet-icons";
 
 const CompanyCard = ({ companyURL, login, avatarURL }) => {
   return (
-    <Box height={{ min: "auto" }} width="small">
+    <Box margin="small" height={{ min: "auto" }} width="small">
       <Card margin="xsmall" height="medium" width="small" background="light-1">
         <CardHeader justify="center" pad="medium">
           {login}
@@ -25,7 +25,7 @@ const CompanyCard = ({ companyURL, login, avatarURL }) => {
           pad={{ horizontal: "small" }}
           background="light-2"
         >
-          <Button icon={<Github />} hoverIndicator />
+          <Button icon={<Github />} hoverIndicator href={companyURL} />
         </CardFooter>
       </Card>
     </Box>
