@@ -27,14 +27,14 @@ const InputForm = ({ fetchCompanies }) => {
         />
       </FormField>
       <FormField
-        margin={{ vertical: "medium", horizontal: "0" }}
+        margin={{ top: "medium", horizontal: "0" }}
         name="location"
         htmlFor="text-input-location"
         label="Location"
       >
         <TextInput id="text-input-location" plain={false} name="location" />
       </FormField>
-      <Box direction="row" justify="center" gap="medium">
+      <Box direction="row" justify="center" margin={{ vertical: "small" }}>
         <Button type="submit" primary label="Search" />
       </Box>
     </Form>

@@ -72,14 +72,17 @@ function App() {
           <Box direction="row" flex overflow={{ horizontal: "hidden" }}>
             <Box flex align="center" margin="xsmall" justify="start">
               <InputForm fetchCompanies={fetchCompanies} />
-              {companies &&
-                companies.map((company) => (
-                  <CompanyCard
-                    companyURL={company.html_url}
-                    login={company.login}
-                    avatarURL={company.avatar_url}
-                  />
-                ))}
+              {companies && (
+                <Box justify="evenly" flex wrap width="100%" direction="row">
+                  {companies.map((company) => (
+                    <CompanyCard
+                      companyURL={company.html_url}
+                      login={company.login}
+                      avatarURL={company.avatar_url}
+                    />
+                  ))}
+                </Box>
+              )}
             </Box>
             {!showSidebar || size !== "small" ? (
               <AboutPageWeb showSidebar={showSidebar} />

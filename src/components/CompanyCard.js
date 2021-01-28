@@ -1,10 +1,18 @@
 import React from "react";
-import { Card, CardHeader, CardBody, CardFooter, Button, Image } from "grommet";
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  Button,
+  Image,
+  Box,
+} from "grommet";
 import { Github } from "grommet-icons";
 
 const CompanyCard = ({ companyURL, login, avatarURL }) => {
   return (
-    <div>
+    <Box height={{ min: "auto" }} width="small">
       <Card margin="xsmall" height="medium" width="small" background="light-1">
         <CardHeader justify="center" pad="medium">
           {login}
@@ -20,7 +28,7 @@ const CompanyCard = ({ companyURL, login, avatarURL }) => {
           <Button icon={<Github />} hoverIndicator />
         </CardFooter>
       </Card>
-    </div>
+    </Box>
   );
 };
 
